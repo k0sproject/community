@@ -1,4 +1,6 @@
 # k0s Community
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fk0sproject%2Fcommunity.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fk0sproject%2Fcommunity?ref=badge_shield)
+
 
 Welcome to the k0s Project Community!
 
@@ -36,3 +38,7 @@ This repository contains common community information for [k0s][k0s] and its [su
 
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fk0sproject%2Fcommunity.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fk0sproject%2Fcommunity?ref=badge_large)
