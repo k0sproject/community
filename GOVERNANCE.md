@@ -7,15 +7,19 @@ This document defines governance policies for the [k0s and its sub-projects](htt
   - [Code of Conduct](#code-of-conduct)
   - [Vendor Neutrality](#vendor-neutrality)
   - [Meetings](#meetings)
-  - [Project Roles](#project-roles)
+  - [Project Roles \& Contributor ladder](#project-roles--contributor-ladder)
     - [Summary of Roles](#summary-of-roles)
       - [Contributors](#contributors)
+        - [Checklist before becoming a Contributor](#checklist-before-becoming-a-contributor)
+        - [Privileges of a Contributor](#privileges-of-a-contributor)
+      - [Reviewers](#reviewers)
+        - [Checklist before becoming a Reviewer](#checklist-before-becoming-a-reviewer)
+        - [Privileges of a Reviewer](#privileges-of-a-reviewer)
       - [Maintainers](#maintainers)
       - [Mapping Project Roles to GitHub Roles](#mapping-project-roles-to-github-roles)
     - [Off-boarding Guidance](#off-boarding-guidance)
   - [Maintainer Areas](#maintainer-areas)
     - [k0s Projects](#k0s-projects)
-    - [Projects areas](#projects-areas)
   - [Conflict Resolutions](#conflict-resolutions)
   - [Changes](#changes)
   - [Credits](#credits)
@@ -40,20 +44,25 @@ k0s follows the CNCF vendor neutrality guidelines documented at:
 
 ## Meetings
 
-The k0s Project community has one regular community meeting:
-
-  * Meets monthly, Last Tuesday of every month 1:00 PM  GMT
-  * [Agenda & Meeting Notes](https://docs.google.com/document/d/1K7kc4nARFsM60RpzWF7xREF9FHySDuWSu9_6dstkLlg/edit?tab=t.0#heading=h.s485wlw1do6e)
+The k0s Project community meetings are scheduled via [LFX Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/k0s?view=month). Meeting notes are kept in CNCF [notes](https://notes.cncf.io/s/_5FVgysYK) tool. Both of these require a Linux Foundation account to access.
 
 The maintainers may also have closed meetings to discuss security reports or Code of Conduct violations. Such meetings should be scheduled by any maintainer on receipt of a security issue or CoC report. All current Maintainers must be invited to such closed meetings, except for any maintainer who is accused of a CoC violation.
 
-## Project Roles
+## Project Roles & Contributor ladder
 
-The k0s community welcomes all contributors and has well-defined roles detailed below.
+The k0s community welcomes all contributors and has well-defined roles detailed below. The progression between the roles defines the contributor ladder. The contributor ladder is a way to provide a path for contributors to grow and take on more responsibilities in the project. Community members generally start at the first levels of the ladder and advance up it as their involvement in the project grows.
 
 This document highlights the roles and responsibilities for the k0s community members. It also outlines the requirements for anyone who is looking to take on leadership roles in the k0s project. The following governance applies to all k0s subprojects.
 
-**Note:** Please make sure to read the CNCF [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
+Each of the contributor roles below is organized into three types of lists:
+
+Responsibilities: tasks that a contributor is expected to do at this level
+Qualifications: requirements a person needs to meet to be at that level
+Privileges: rights contributors on that level are entitled to
+
+As the k0s project grows, the current roles may be broken out into new roles and/or teams and roles may no longer be needed.
+
+All roles within the k0s project will need to adhere to CNCF [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
 
 ### Summary of Roles
 
@@ -61,30 +70,61 @@ The table below summarizes project roles and responsibilities. Details are provi
 
 | Role         | Requirements                                                                                                                | Ongoing Responsibilities                                               | Defined by                                                                                                      |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Contributors | At least five (5) contributions to any sub-project.                                                                         | None                                                                   | CONTRIBUTORS.md                                                                                                 |
+| Contributors | At least five (5) contributions to any sub-project.                                                                         | None                                                                   | CONTRIBUTORS.md, voted in by current maintainers of the given sub-project                                       |
+| Reviewers    | An established contributor who regularly participates in the project via issues, PRs and discussions.                       | Review PRs and provide feedback to contributors.                       | Voted in by the k0s maintainers, listing in `MAINTAINERS.md`, GitHub organization member.                       |
 | Maintainer   | At least ten (10) contributions to a sub-project + Highly experienced and active contributor + Voted in by k0s maintainers. | Monitor project growth, set direction and priorities for a subproject. | Voted in by the k0s maintainers, listing in `MAINTAINERS.md`, GitHub organization member, and repository owner. |
 
 #### Contributors
 
-Contributors are individuals who have made at least five (5) contributions to the project; by authoring PRs, commenting on issues and pull requests, and participating in community discussions on Slack or the mailing list.
+Contributors are individuals who have made at least five (5) contributions to the project; by authoring PRs, commenting on issues and pull requests,
+and participating in community discussions on Slack or the mailing list.
+They are trusted to have their contributions to run CI without requiring maintainers' approval.
 
 ##### Checklist before becoming a Contributor
 
-- Have at least five (5) PRs successfully merged for any repositories under the k0s organization
-- Member of the k0s channel on Kubernetes and/or CNCF Slack
+- Have at least five (5) PRs successfully merged for any repositories under the k0s organization in 6 month period
+  - The five PRs must demonstrate good judgment and a meaningful understanding of the project’s codebase, design, and development practices. The number of PRs alone is not sufficient to meet this requirement
+- Member of the k0s channel(s) on Kubernetes and/or CNCF Slack
 - Attended one (1) Contributors Meeting as documented
+- Check-in with maintainers to make yourself eligible to be voted in as a Contributor by the maintainers
 
 ##### Privileges of a Contributor
 
 - Listed in the file in at least one (1) organization repository
 - k0s contributor badge issued
-- The PR will run CI without the maintainers approval
+- Their PRs will run CI without the maintainers approval
 
 To join the k0s project as a Contributor create a Pull Request (PR) in the [k0s repository](https://github.com/k0sproject/k0s) with the following:
 
 1. Changes to add yourself to the [CONTRIBUTORS.md](https://github.com/k0sproject/k0s/blob/main/CONTRIBUTORS.md) file.
 2. Links to your prior contributions (at least five).
 3. Links to slack discussions, issue comments, etc.
+
+#### Reviewers
+
+A Reviewer is an established contributor who regularly participates in the project via issues, PRs and discussions.
+Reviewers are expected to review PRs, provide feedback to contributors, and help maintain the quality of the project.
+Reviewers have privileges in the project repositories to give authoritative reviews and as such are trusted to act in the interests of the whole project.
+
+##### Checklist before becoming a Reviewer
+
+- Be an established contributor in repositories under the k0s organization
+- Regularly participates in issues, pull requests, and community discussions
+- Demonstrates high-quality and timely PR reviews with constructive feedback
+- Attained a majority vote from current maintainers
+- Added to `MAINTAINERS.md` as a Reviewer
+- Granted GitHub organization membership with repository permissions appropriate for PR review
+
+##### Privileges of a Reviewer
+
+Reviewers have the privileges of a contributor, and in addition:
+
+- Has the ability to review pull requests and provide feedback
+- Provides feedback to contributors
+- Helps maintain the quality of the project
+- Reviewer approvals are considered authoritative and count toward required pull request approvals
+  - Reviewer can give authoritative review for a maintainers PRs and their approvals are considered binding for the purpose of merging
+  - A maintainer can override a reviewer's approval if necessary
 
 #### Maintainers
 
@@ -142,11 +182,13 @@ Maintainers are the technical authority for a subproject and are considered lead
 **Off-boarding Criteria**
 
 An off-boarding vote may be called by any maintainer if any of the following criteria are met:
-- A maintainer has made less than 30 contributions over a span of 1 year.
+
+- A maintainer or contributor has become in-active, meaning they have not contributed or participated in project activities for an extended period.
   - Contributions will be tracked manually until having an active Devstats Dashboard for the project.
   - Other relevant data will be collected and evaluated to assess the maintainer's contributions. This includes their involvement in discussions, conversations on Slack, and any other relevant interactions.
 
 The off-boarding process includes the following steps:
+
 - The off-boarding process is initiated by any currently active maintainer who conducts a review of the maintainers list and proceeds to initialize the off-boarding process if the above criteria are met.
 - The plans of off-boarding process is sent in a private Slack message or email to the candidate.
 - If the candidate for removal states plans to continue participating, another 6 months will be granted to the candidate to make contributions and the new cycle starts. No action is taken and this process terminates.
@@ -159,10 +201,11 @@ The off-boarding process includes the following steps:
 
 The roles used in this document are custom roles mapped according to the [GitHub roles and responsibilities](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization).
 
-| Project Role   | GitHub Role    |
-| -------------- | -------------- |
-| Contributor    | Triage         |
-| Maintainer     | Maintain       |
+| Project Role | GitHub Role                     |
+|--------------|---------------------------------|
+| Contributor  | Triage                          |
+| Reviewer     | Triage + reviewers team mapping |
+| Maintainer   | Maintain                        |
 
 ### Off-boarding Guidance
 
@@ -181,7 +224,6 @@ For this reason, maintainers can be specific to one (or more) area of the code b
 - [k0sproject rig](https://github.com/k0sproject/rig)
 - [k0s Community](https://github.com/k0sproject/community)
 - [k0s Website](https://github.com/k0sproject/k0sproject.github.io)
-
 
 ## Conflict Resolutions
 
