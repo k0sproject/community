@@ -70,9 +70,11 @@ The table below summarizes project roles and responsibilities. Details are provi
 
 | Role         | Requirements                                                                                                                | Ongoing Responsibilities                                               | Defined by                                                                                                      |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Contributors | At least five (5) contributions to any sub-project.                                                                         | None                                                                   | CONTRIBUTORS.md, voted in by current maintainers of the given sub-project                                       |
-| Reviewers    | An established contributor who regularly participates in the project via issues, PRs and discussions.                       | Review PRs and provide feedback to contributors.                       | Voted in by the k0s maintainers, listing in `MAINTAINERS.md`, GitHub organization member.                       |
-| Maintainer   | At least ten (10) contributions to a sub-project + Highly experienced and active contributor + Voted in by k0s maintainers. | Monitor project growth, set direction and priorities for a subproject. | Voted in by the k0s maintainers, listing in `MAINTAINERS.md`, GitHub organization member, and repository owner. |
+| Contributors | At least five (5) contributions to any sub-project.                                                                         | None                                                                   | Voted in by current maintainers of the given sub-project                                       |
+| Reviewers    | An established contributor who regularly participates in the project via issues, PRs and discussions.                       | Review PRs and provide feedback to contributors.                       | Voted in by the k0s maintainers, GitHub organization member.                       |
+| Maintainer   | At least ten (10) contributions to a sub-project + Highly experienced and active contributor + Voted in by k0s maintainers. | Monitor project growth, set direction and priorities for a subproject. | Voted in by the k0s maintainers, GitHub organization member, and repository owner. |
+
+All members of the k0s community, with their assinged roles are listed and managed in [maintainers.yaml file](https://github.com/k0sproject/.project/blob/main/maintainers.yaml).
 
 #### Contributors
 
@@ -96,7 +98,7 @@ They are trusted to have their contributions to run CI without requiring maintai
 
 To join the k0s project as a Contributor create a Pull Request (PR) in the [k0s repository](https://github.com/k0sproject/k0s) with the following:
 
-1. Changes to add yourself to the [CONTRIBUTORS.md](https://github.com/k0sproject/k0s/blob/main/CONTRIBUTORS.md) file.
+1. Changes to add yourself to the [maintainers.yaml](https://github.com/k0sproject/.project/blob/main/maintainers.yaml) file.
 2. Links to your prior contributions (at least five).
 3. Links to slack discussions, issue comments, etc.
 
@@ -173,11 +175,11 @@ Maintainers are the technical authority for a subproject and are considered lead
 - Have issues assigned to them
 - Have PRs assigned to them
 - Receives a k0s Maintainer Badge
-- Listed in `MAINTAINERS.md`
+- Listed in [maintainers.yaml](https://github.com/k0sproject/.project/blob/main/maintainers.yaml)
 
 **On-boarding Criteria**
 
-- Voted in by a majority of current maintainers, raised in a PR by the proposed member to add themselves to `MAINTAINERS.md`, during a voting period lasting at least three (3) working days
+- Voted in by a majority of current maintainers, raised in a PR by the proposed member to add themselves to [maintainers.yaml](https://github.com/k0sproject/.project/blob/main/maintainers.yaml), during a voting period lasting at least three (3) working days
 
 **Off-boarding Criteria**
 
