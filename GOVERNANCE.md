@@ -16,6 +16,8 @@ This document defines governance policies for the [k0s and its sub-projects](htt
         - [Checklist before becoming a Reviewer](#checklist-before-becoming-a-reviewer)
         - [Privileges of a Reviewer](#privileges-of-a-reviewer)
       - [Maintainers](#maintainers)
+      - [Additional Maintainer Roles](#additional-maintainer-roles)
+        - [Community Maintainer](#community-maintainer)
       - [Mapping Project Roles to GitHub Roles](#mapping-project-roles-to-github-roles)
     - [Off-boarding Guidance](#off-boarding-guidance)
   - [Maintainer Areas](#maintainer-areas)
@@ -114,7 +116,7 @@ Reviewers have privileges in the project repositories to give authoritative revi
 - Regularly participates in issues, pull requests, and community discussions
 - Demonstrates high-quality and timely PR reviews with constructive feedback
 - Attained a majority vote from current maintainers
-- Added to `MAINTAINERS.md` as a Reviewer
+- Added to [maintainers.yaml](https://github.com/k0sproject/.project/blob/main/maintainers.yaml) as a Reviewer
 - Granted GitHub organization membership with repository permissions appropriate for PR review
 
 ##### Privileges of a Reviewer
@@ -179,7 +181,7 @@ Maintainers are the technical authority for a subproject and are considered lead
 
 **On-boarding Criteria**
 
-- Voted in by a majority of current maintainers, raised in a PR by the proposed member to add themselves to [maintainers.yaml](https://github.com/k0sproject/.project/blob/main/maintainers.yaml), during a voting period lasting at least three (3) working days
+- Voted in by two-thirds (66%) of current maintainers, raised in a PR by the proposed member to add themselves to [maintainers.yaml](https://github.com/k0sproject/.project/blob/main/maintainers.yaml), during a voting period lasting at least three (3) working days
 
 **Off-boarding Criteria**
 
@@ -197,7 +199,37 @@ The off-boarding process includes the following steps:
 - If the candidate fails to meet the criteria during the second attempt to make contributions, the off-boarding process continues.
 - A pull request (PR) proposing movement of the candidate is sent, initiating the public voting phase.
 - The vote passes if a majority of current maintainers vote yes during a voting period lasting five (5) working days.
-- A positive vote will result in movement to an _emeritus_ status within `MAINTAINERS.md` and removal from organization membership.
+- A positive vote will result in movement to an _emeritus_ status within [maintainers.yaml](https://github.com/k0sproject/.project/blob/main/maintainers.yaml) and removal from organization membership.
+
+#### Additional Maintainer Roles
+
+Some leadership work in k0s is not measured in merged code: representing the project, working with the CNCF, and growing the community.
+The roles below are maintainer roles for that work. They follow the maintainer on-boarding and off-boarding criteria above, with the qualifications listed for each role in place of the merged-PR requirement.
+
+Maintainers in these roles:
+
+- Hold the `Maintain` GitHub role and are listed in `CODEOWNERS` for the repositories of their area
+- Vote with all other maintainers on project-wide matters: maintainer on-boarding and off-boarding, governance changes, and conflict resolution
+- Leave technical design decisions for a subproject to that subproject's maintainers
+
+##### Community Maintainer
+
+Area: [k0s Community](https://github.com/k0sproject/community).
+
+**Responsibilities**
+
+- Runs community meetings and office hours, and keeps their notes up-to-date and public
+- Represents k0s to the CNCF (TOC, TAGs, project reviews) and at events
+- Maintains governance documents and helps onboarding new contributors
+- Coordinates blog posts, release announcements, and project communication
+- Reports community health (contributors, contributing organizations, issue and PR response times) at community meetings
+
+**Qualifications**
+
+- Sustained community leadership for at least three (3) months
+- At least five (5) public contributions to this area, in any combination of: merged PRs to the k0s Community repository, blog posts, published meeting notes, talks, representing the project at events, or submissions to the CNCF on behalf of the project
+- Regularly attends k0s [Maintainers and Community Meetings](https://docs.google.com/document/d/1K7kc4nARFsM60RpzWF7xREF9FHySDuWSu9_6dstkLlg/edit?tab=t.0#heading=h.s485wlw1do6e)
+- Create a pull request to add self to `CODEOWNERS` in the k0s Community repository
 
 #### Mapping Project Roles to GitHub Roles
 
@@ -208,6 +240,7 @@ The roles used in this document are custom roles mapped according to the [GitHub
 | Contributor  | Triage                          |
 | Reviewer     | Triage + reviewers team mapping |
 | Maintainer   | Maintain                        |
+| Community Maintainer | Maintain on the repositories of their area |
 
 ### Off-boarding Guidance
 
@@ -233,7 +266,7 @@ Typically, it is assumed that disputes will be resolved amicably by those involv
 
 ## Changes
 
-This Project Governance is a living document. All key project changes including changes in project governance can be proposed by a GitHub PR and then reviewed and voted on by project maintainers.
+This Project Governance is a living document. All key project changes including changes in project governance can be proposed by a GitHub PR and then reviewed and voted on by project maintainers. A change to this document is approved by two-thirds (66%) of current maintainers, during a voting period lasting at least five (5) working days.
 
 ## Credits
 
